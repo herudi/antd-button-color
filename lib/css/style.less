@@ -12,7 +12,8 @@ info @info-color;
 .getButtons(@index:1) when(@index <= length(@buttons)) {
     @name: extract(extract(@buttons, @index),1);
     @color: extract(extract(@buttons, @index),2);
-    @colorHoverFocus: lighten(@color, 10%);
+    @colorHoverFocus: fade(@color, 75%);
+    @colorHoverBorderFocus: fade(@color, 10%);
     @colorActive: darken(@color, 10%);
     .ant-btn-@{name}{
         color: #fff !important;
@@ -48,7 +49,7 @@ info @info-color;
     .ant-btn-@{name}:focus {
         color: #fff !important;
         background-color: @colorHoverFocus !important;
-        border-color: @colorHoverFocus !important;
+        border-color: @colorHoverBorderFocus !important;
     }
     .ant-btn-@{name}:active,
     .ant-btn-@{name}.active {
