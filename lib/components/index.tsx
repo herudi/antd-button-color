@@ -6,9 +6,11 @@ type TButton = Mod<ButtonProps, {
     type?: "default" | "primary" | "ghost" | "dashed" | "link" | "text" | "success" | "warning" | "info" | "danger"
 }>;
 
-export default (props: TButton) => {
+const ButtonColor = (props: TButton) => {
     const _type: any = props.type;
     return (
         <Button {...props} type={_type} />
     )
 };
+
+export default ButtonColor;

@@ -97,11 +97,13 @@
     return _extends.apply(this, arguments);
   }
 
-  exports.default = props => {
+  const ButtonColor = props => {
     const _type = props.type;
     return /*#__PURE__*/React.createElement(_button2.default, _extends({}, props, {
       type: _type
     }));
   };
+
+  exports.default = ButtonColor;
 });
 //# sourceMappingURL=index.js.map

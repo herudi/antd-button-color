@@ -2,10 +2,13 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
 
 import * as React from "react";
 import Button from "antd/lib/button/button";
-export default (props => {
+
+const ButtonColor = props => {
   const _type = props.type;
   return /*#__PURE__*/React.createElement(Button, _extends({}, props, {
     type: _type
   }));
-});
+};
+
+export default ButtonColor;
 //# sourceMappingURL=index.js.map
