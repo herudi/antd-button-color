@@ -8,9 +8,7 @@
     "type": "git",
     "url": "https://github.com/herudi/antd-button-color"
   },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
-  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "browserslist": [
     "last 2 versions",
     "Firefox ESR",
