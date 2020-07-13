@@ -28,6 +28,23 @@ $ yarn add antd-button-color
 
 ## Usage
 
+### Import Style css or less
+```JavaScript
+
+//import css or less
+import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
+import 'antd-button-color/dist/css/style.css'; // or 'antd-button-color/dist/css/style.less'
+
+// global vars in less
+// @success-color: #28a745;
+// @warning-color: #eca52b;
+// @info-color: #17a2b8;
+// @dark-color: #343a40;
+// @light-dark-color: #6c757d;
+
+```
+
+### Usage in jsx or tsx
 
 ```JavaScript
 
