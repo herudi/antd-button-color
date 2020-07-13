@@ -3,7 +3,7 @@ import Button, { ButtonProps } from "antd/lib/button/button";
 
 type Mod<T, R> = Omit<T, keyof R> & R;
 type TButton = Mod<ButtonProps, {
-    type?: "default" | "primary" | "ghost" | "dashed" | "link" | "text" | "success" | "warning" | "info"
+    type?: "default" | "primary" | "ghost" | "dashed" | "link" | "text" | "success" | "warning" | "info" | "danger"
 }>;
 
 export default (props: TButton) => {

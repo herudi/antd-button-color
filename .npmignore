@@ -1,0 +1,8 @@
+/node_modules
+/src
+/public
+/lib
+/script
+package-dev.json
+package-prod.json
+yarn.lock
