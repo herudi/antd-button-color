@@ -19,13 +19,13 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
-var ButtonColor = function ButtonColor(props) {
+var Button = function Button(props) {
   var _type = props.type;
   return /*#__PURE__*/React.createElement(_button.default, _extends({}, props, {
     type: _type
   }));
 };
 
-var _default = ButtonColor;
+var _default = Button;
 exports.default = _default;
-//# sourceMappingURL=index.js.map
+//# sourceMappingURL=Button.js.map
