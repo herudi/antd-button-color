@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../lib/components/index.ts"],"names":["Button"],"mappings":"AAAA,OAAOA,MAAP,MAAmB,UAAnB;AAEA,eAAeA,MAAf","sourcesContent":["import Button from './Button';\r\n\r\nexport default Button;"],"file":"index.js"}

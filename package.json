@@ -1,0 +1,43 @@
+{
+  "name": "antd-button-color",
+  "version": "0.0.1",
+  "main": "dist/js/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/js/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/herudi/antd-button-color"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Firefox ESR",
+    "> 1%",
+    "ie >= 11"
+  ],
+  "dependencies": {},
+  "scripts": {
+    "build:lib": "yarn build:babel && yarn build:types && node ./scripts/copyts.js",
+    "build:babel": "concurrently \"yarn build:babel:esm && yarn build:babel:umd\" \"yarn build:babel:cjs\"",
+    "build:babel:cjs": "cross-env BABEL_ENV=cjs babel --source-maps --extensions \".js,.ts,.tsx\" lib --out-dir dist/js --presets=@babel/env",
+    "build:babel:esm": "cross-env BABEL_ENV=esm babel --source-maps --extensions \".js,.ts,.tsx\" lib --out-dir dist/esm",
+    "build:babel:umd": "cross-env BABEL_ENV=umd babel --source-maps --extensions \".js\" dist/esm --out-dir dist/umd --plugins=transform-es2015-modules-umd",
+    "build:types": "tsc -p tsconfig.gen-dts.json",
+    "clean": "rimraf dist",
+    "dev": "yarn build:types && yarn build:babel:esm --skip-initial-build --watch --verbose"
+  },
+  "devDependencies": {
+    "typescript": "~3.7.2",
+    "@types/node": "^12.0.0",
+    "@babel/cli": "^7.10.4",
+    "@babel/plugin-proposal-export-default-from": "^7.10.4",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "babel-plugin-typescript-to-proptypes": "^1.3.2",
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2"
+  },
+  "author": "Herudi",
+  "license": "MIT"
+}
