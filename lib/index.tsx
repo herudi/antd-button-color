@@ -42,7 +42,7 @@ const styleButton = {
 
 const disableAnimation: string = "disable-animation";
 
-const Button = (props: TButton) => {
+const Button = React.forwardRef((props: TButton, ref: any) => {
     const _isLink = props.with === 'link';
     const _isDashed = props.with === 'dashed';
     const _isGhost = props.with === 'ghost';
@@ -52,8 +52,10 @@ const Button = (props: TButton) => {
     const _linkStyle = _isLink ? disableAnimation : undefined;
     const _classes = [_linkStyle, props.className].filter(x => !!x).join(' ');
     return (
-        <ButtonOriginal {...props} className={_classes} style={{..._style, ...props.style}} ghost={_ghost} type={_type}/>
+        <ButtonOriginal {...props} ref={ref} className={_classes} style={{..._style, ...props.style}} ghost={_ghost} type={_type}>
+            {props.children}
+        </ButtonOriginal>
     )
-};
+});
 
 export default Button;

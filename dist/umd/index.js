@@ -162,8 +162,7 @@
     }
   };
   const disableAnimation = "disable-animation";
-
-  const Button = props => {
+  const Button = React.forwardRef((props, ref) => {
     const _isLink = props.with === 'link';
 
     const _isDashed = props.with === 'dashed';
@@ -181,13 +180,13 @@
     const _classes = [_linkStyle, props.className].filter(x => !!x).join(' ');
 
     return /*#__PURE__*/React.createElement(_button2.default, _extends({}, props, {
+      ref: ref,
       className: _classes,
       style: _objectSpread({}, _style, {}, props.style),
       ghost: _ghost,
       type: _type
-    }));
-  };
-
+    }), props.children);
+  });
   exports.default = Button;
 });
 //# sourceMappingURL=index.js.map

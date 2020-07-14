@@ -43,8 +43,7 @@ var styleButton = {
   }
 };
 var disableAnimation = "disable-animation";
-
-var Button = function Button(props) {
+var Button = React.forwardRef(function (props, ref) {
   var _isLink = props.with === 'link';
 
   var _isDashed = props.with === 'dashed';
@@ -64,13 +63,13 @@ var Button = function Button(props) {
   }).join(' ');
 
   return /*#__PURE__*/React.createElement(_button.default, _extends({}, props, {
+    ref: ref,
     className: _classes,
     style: _objectSpread({}, _style, {}, props.style),
     ghost: _ghost,
     type: _type
-  }));
-};
-
+  }), props.children);
+});
 var _default = Button;
 exports.default = _default;
 //# sourceMappingURL=index.js.map
