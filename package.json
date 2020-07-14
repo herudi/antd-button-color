@@ -1,6 +1,6 @@
 {
   "name": "antd-button-color",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/js/index.d.ts",

@@ -65,6 +65,11 @@ import Button from "antd-button-color";
 <Button type="lightdark">Lightdark Button</Button>
 <Button type="default">Deafult Button</Button>
 
+//with dashed
+<Button with="dashed" type="success">Success Dashed Button</Button>
+
+//with link
+<Button with="link" type="info">Info Link Button</Button>
 ```
 
 ## License
