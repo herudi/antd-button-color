@@ -1,6 +1,6 @@
 {
   "name": "antd-button-color",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/js/index.d.ts",
@@ -39,5 +39,11 @@
     "cross-env": "^7.0.2"
   },
   "author": "Herudi",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "Ant Design Button",
+    "antd button",
+    "antd button color",
+    "antd button custom color"
+  ]
 }
