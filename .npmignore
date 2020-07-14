@@ -4,5 +4,6 @@
 /lib
 /script
 package-dev.json
+screenshot.png
 package-prod.json
 yarn.lock
