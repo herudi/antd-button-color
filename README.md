@@ -1,7 +1,11 @@
 # antd-button-color
 Simple button for Ant Design react with more color like default, primary, success, warning, info, dark, lightdark.
-[DEMO](https://codesandbox.io/s/amazing-thompson-grfvh)
-
+<br/>
+<br/>
+<a href="https://codesandbox.io/s/amazing-thompson-grfvh" target="_blank" rel="noopener noreferrer">DEMO</a>
+<br/>
+<br/>
+![ImageDemo](https://raw.githubusercontent.com/herudi/antd-button-color/master/screenshot.png)
 ## Features
 
 - More color for button (primary, success, warning, info, dark, lightdark, default).
