@@ -27,23 +27,23 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var customTypeArray = ["success", "warning", "info", "dark", "lightdark", "danger"];
-var customWithArray = ["link", "dashed", "ghost"];
+var customTypeArray = ['success', 'warning', 'info', 'dark', 'lightdark', 'danger'];
+var customWithArray = ['link', 'dashed', 'ghost'];
 var styleButton = {
   dashed: {
-    borderStyle: "dashed"
+    borderStyle: 'dashed'
   },
   ghost: {
-    borderStyle: "solid"
+    borderStyle: 'solid'
   },
   link: {
-    borderStyle: "none",
-    boxShadow: "none",
-    borderColor: "transparent"
+    borderStyle: 'none',
+    boxShadow: 'none',
+    borderColor: 'transparent'
   }
 };
-var disableAnimation = "disable-animation";
-var Button = React.forwardRef(function (props, ref) {
+var disableAnimation = 'disable-animation';
+var Button = /*#__PURE__*/React.forwardRef(function (props, ref) {
   var _isLink = props.with === 'link';
 
   var _isDashed = props.with === 'dashed';
@@ -65,7 +65,7 @@ var Button = React.forwardRef(function (props, ref) {
   return /*#__PURE__*/React.createElement(_button.default, _extends({}, props, {
     ref: ref,
     className: _classes,
-    style: _objectSpread({}, _style, {}, props.style),
+    style: _objectSpread(_objectSpread({}, _style), props.style),
     ghost: _ghost,
     type: _type
   }), props.children);
