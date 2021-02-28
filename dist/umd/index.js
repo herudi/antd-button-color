@@ -146,23 +146,23 @@
     return obj;
   }
 
-  const customTypeArray = ["success", "warning", "info", "dark", "lightdark", "danger"];
-  const customWithArray = ["link", "dashed", "ghost"];
+  const customTypeArray = ['success', 'warning', 'info', 'dark', 'lightdark', 'danger'];
+  const customWithArray = ['link', 'dashed', 'ghost'];
   const styleButton = {
     dashed: {
-      borderStyle: "dashed"
+      borderStyle: 'dashed'
     },
     ghost: {
-      borderStyle: "solid"
+      borderStyle: 'solid'
     },
     link: {
-      borderStyle: "none",
-      boxShadow: "none",
-      borderColor: "transparent"
+      borderStyle: 'none',
+      boxShadow: 'none',
+      borderColor: 'transparent'
     }
   };
-  const disableAnimation = "disable-animation";
-  const Button = React.forwardRef((props, ref) => {
+  const disableAnimation = 'disable-animation';
+  const Button = /*#__PURE__*/React.forwardRef((props, ref) => {
     const _isLink = props.with === 'link';
 
     const _isDashed = props.with === 'dashed';
@@ -182,7 +182,7 @@
     return /*#__PURE__*/React.createElement(_button2.default, _extends({}, props, {
       ref: ref,
       className: _classes,
-      style: _objectSpread({}, _style, {}, props.style),
+      style: _objectSpread(_objectSpread({}, _style), props.style),
       ghost: _ghost,
       type: _type
     }), props.children);
