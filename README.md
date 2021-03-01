@@ -1,5 +1,5 @@
 # antd-button-color
-[![npm version](https://img.shields.io/badge/npm-1.0.3-success.svg)](https://www.npmjs.com/package/antd-button-color) 
+[![npm version](https://img.shields.io/badge/npm-1.0.4-success.svg)](https://www.npmjs.com/package/antd-button-color) 
 [![License](http://img.shields.io/:license-mit-success.svg)](http://badges.mit-license.org)
 
 Simple button for Ant Design react with more color like default, primary, success, warning, info, dark, lightdark.
