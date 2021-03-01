@@ -1,6 +1,6 @@
 {
   "name": "antd-button-color",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "dist/js/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/js/index.d.ts",
@@ -17,11 +17,7 @@
     "> 1%",
     "ie >= 11"
   ],
-  "dependencies": {
-    "@types/react": "^17.0.2",
-    "antd": "^4.12.3",
-    "react": "^17.0.1"
-  },
+  "dependencies": {},
   "scripts": {
     "build:lib": "yarn build:babel && yarn build:types && node ./scripts/copyts.js",
     "build:babel": "concurrently \"yarn build:babel:esm && yarn build:babel:umd\" \"yarn build:babel:cjs\"",
@@ -55,10 +51,5 @@
     "antd button",
     "antd button color",
     "antd button custom color"
-  ],
-  "peerDependencies": {
-    "@types/react": "^17.0.2",
-    "antd": "^4.12.3",
-    "react": "^17.0.1"
-  }
+  ]
 }
